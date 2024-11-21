@@ -1,0 +1,19 @@
+.user-data-box {
+  background-color: #76b852;
+  margin: 3rem 1rem;
+  padding: 1rem;
+  color: white;
+  border: 1px solid;
+  border-radius: 0.5rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+p {
+  display: flex;
+  margin-right: 0.5rem;
+  align-items: center;
+  font-size: 0.9rem;
+}

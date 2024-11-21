@@ -1,0 +1,41 @@
+<div class="login-page">
+  <div class="form">
+    <app-input
+      [controlName]="form.get('firstName')"
+      [placeHolder]="'نام'"
+    ></app-input>
+    <app-input
+      [controlName]="form.get('lastName')"
+      [placeHolder]="'نام خانوادگی'"
+    ></app-input>
+    <app-only-number-input
+      [controlName]="form.get('mobile')"
+      [placeHolder]="'تلفن همراه'"
+    ></app-only-number-input>
+    <app-ng-select
+      [controlName]="form.get('provinceId')"
+      (onChange)="onProvinceChange()"
+      [placeHolder]="'استان'"
+      [itemsList]="provinceList"
+      [bindLabel]="'title'"
+      [bindValue]="'value'"
+    ></app-ng-select>
+    <app-ng-select
+      [controlName]="form.get('cityId')"
+      [placeHolder]="'شهر'"
+      [itemsList]="filteredCityList"
+      [bindLabel]="'title'"
+      [bindValue]="'value'"
+    ></app-ng-select>
+
+    <app-input
+      [controlName]="form.get('password')"
+      [placeHolder]="'گذرواژه'"
+      [type]="'password'"
+    ></app-input>
+    <button (click)="createUser()">ثبت نام</button>
+    <p class="message">
+      <a href="auth/login">ورود با نام کاربری و کلمه عبور</a>
+    </p>
+  </div>
+</div>

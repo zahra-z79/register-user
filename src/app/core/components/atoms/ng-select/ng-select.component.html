@@ -1,0 +1,16 @@
+<div style="position: relative">
+  <ng-select
+    style="margin-bottom: 1.6rem"
+    [placeholder]="placeHolder"
+    [items]="itemsList"
+    [bindLabel]="bindLabel"
+    [bindValue]="bindValue"
+    (change)="onSelectChange()"
+    [notFoundText]="'موردی یافت نشد'"
+    [formControl]="controlName"
+  ></ng-select>
+  <app-input-validation
+    class="validation-text"
+    [controlName]="controlName"
+  ></app-input-validation>
+</div>

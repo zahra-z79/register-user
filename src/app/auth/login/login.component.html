@@ -1,0 +1,50 @@
+<!-- <div class="body">
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true" />
+
+    <div class="signup">
+      <label for="chk" aria-hidden="true">ورود کاربر</label>
+      <input
+        type="text"
+        name="txt"
+        placeholder="نام کاربری"
+        [formControl]="form.get('userName')"
+      />
+      <input
+        type="password"
+        placeholder="گذرواژه"
+        [formControl]="form.get('password')"
+      />
+      <button (click)="login()">ورود</button>
+      <a
+        style="
+          margin: 10px auto;
+          display: flex;
+          justify-content: center;
+          color: white;
+        "
+        href="auth/register"
+        >ثبت نام کاربر</a
+      >
+    </div>
+  </div>
+</div> -->
+
+<div class="login-page">
+  <div class="form">
+    <app-input
+      [controlName]="form.get('userName')"
+      [placeHolder]="'نام کاربری (نام کاربری شماره موبایل است)'"
+    ></app-input>
+    <app-input
+      [controlName]="form.get('password')"
+      [placeHolder]="'گذرواژه'"
+      [type]="'password'"
+    ></app-input>
+
+    <button (click)="login()">ثبت نام</button>
+    <p class="message">
+      <a href="auth/register">ثبت نام کاربر</a>
+    </p>
+  </div>
+</div>

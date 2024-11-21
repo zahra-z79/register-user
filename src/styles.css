@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: IRANSanse;
+  src: url("assets/fonts/IRANSans/IRANSansWeb_Light.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  direction: rtl;
+  text-align: right;
+  font-family: IRANSanse;
+}
+
+.error-placeholder::placeholder {
+  color: red;
+  font-size: smaller;
+}
+
+.toast-message {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
